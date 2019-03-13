@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+Route::get('/', 'TripController@index');
+Route::get('/check-answer', 'TriviaController@checkAnswer');
