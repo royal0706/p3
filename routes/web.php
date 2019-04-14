@@ -10,14 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-/* Route::get('/', function () {
-    return view('welcome');
+#Route::get('/', 'TripController@index');
+ Route::get('/', function () {
+    return view('trip.search');
 });
-*/
+
 # /routes/web.php
 Route::get('/trip/search', 'TripController@search'); # <-- NEW 1 of 2
 Route::get('/trip/search-process', 'TripController@searchProcess'); # <-- NEW 2 of 2
 
 
-Route::get('/', 'TripController@index');
