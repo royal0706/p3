@@ -2,6 +2,10 @@ h1, h2 {
     font-family: 'Merriweather', serif;
 }
 
+h1 {
+    font-size: 200%;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     padding-left: 20px;

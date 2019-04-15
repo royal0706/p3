@@ -13,6 +13,7 @@ class TripController extends Controller
      * /trip/search
      * Show the form to search for your trip
      */
+
     public function index()
     {
         return view('trip.index');
@@ -43,7 +44,7 @@ class TripController extends Controller
     /**
      * GET
      * /trip/search-process
-     * Process the form to search for a book
+     * Process the form to search for your trip
      */
 
     public function searchProcess(Request $request)
@@ -64,7 +65,6 @@ class TripController extends Controller
         $hotelCurrency = $request->input('hotelCurrency', null);
         $months = $request->input('months', null);
 
-        # Code to process the form will go here...
         $saveRound = [];
 
         if ($destination) {
@@ -101,21 +101,18 @@ class TripController extends Controller
 
             $save = $total / $monthNumber;
             $saveRound = round($save);
-
         }
 
-        # Redirect back to the search page with results (if any) stored in the session
-         return redirect('/trip/search')->with([
-             'destination' => $destination,
-             'airfare' => $airfare,
-             'airfareCurrency' => $airfareCurrency,
-             'hotel' => $hotel,
-             'hotelCurrency' => $hotelCurrency,
-             'months' => $months,
-             'saveRound' => $saveRound,
+        return redirect('/trip/search')->with([
+            'destination' => $destination,
+            'airfare' => $airfare,
+            'airfareCurrency' => $airfareCurrency,
+            'hotel' => $hotel,
+            'hotelCurrency' => $hotelCurrency,
+            'months' => $months,
+            'saveRound' => $saveRound,
 
-         ]);
-
+        ]);
     }
 }
 

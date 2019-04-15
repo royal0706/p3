@@ -68,7 +68,7 @@
     @if($destination)
         <div class='alert'
              role='alert'>For your trip to {{ $destination }}, you will need to save the following amount per month:
-             </div>
+        </div>
         <div class='alert-primary'>${{ $saveRound }}</div>
     @endif
 

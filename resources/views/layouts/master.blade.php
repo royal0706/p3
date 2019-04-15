@@ -7,7 +7,7 @@
     <link href='/css/app.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Merriweather%7CRoboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/app.css">
-    <meta charset="utf-8">
+
     @yield('head')
 </head>
 <body>
