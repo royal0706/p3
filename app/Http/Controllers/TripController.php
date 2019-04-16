@@ -50,10 +50,10 @@ class TripController extends Controller
     public function searchProcess(Request $request)
     {
         $request->validate([
-            'destination' => 'required',
-            'airfare' => 'required',
+            'destination' => 'required|alpha',
+            'airfare' => 'required|numeric',
             'airfareCurrency' => 'required',
-            'hotel' => 'required',
+            'hotel' => 'required|numeric',
             'hotelCurrency' => 'required',
             'months' => 'required',
         ]);

@@ -19,30 +19,30 @@
     <form method='GET' action='/trip/search-process'>
 
         <label>Destination: *</label>
-        <input type='text' name='destination' id='destination' value='{{ $destination }}'>
+        <input type='text' name='destination' id='destination' value='{{ old('destination') }}'>
         @include('includes.error-field', ['fieldName' => 'destination'])
 
         <label>Airfare Total: *</label>
-        <input type='number' name='airfare' id='airfare' value='{{ $airfare }}'>
+        <input type='number' name='airfare' id='airfare' value='{{ old('airfare') }}'>
         @include('includes.error-field', ['fieldName' => 'airfare'])
 
         <label>Currency</label>
         <select name='airfareCurrency'>
-            <option value='usd' {{ ($airfareCurrency == 'usd') ? 'selected' : ''}}>USD</option>
-            <option value='gbp' {{ ($airfareCurrency == 'gbp') ? 'selected' : ''}}>GBP</option>
-            <option value='eur' {{ ($airfareCurrency == 'eur') ? 'selected' : ''}}>EUR</option>
+            <option value='usd' {{ (old('airfareCurrency') == 'usd') ? 'selected' : ''}}>USD</option>
+            <option value='gbp' {{ (old('airfareCurrency') == 'gbp') ? 'selected' : ''}}>GBP</option>
+            <option value='eur' {{ (old('airfareCurrency') == 'eur') ? 'selected' : ''}}>EUR</option>
         </select>
         @include('includes.error-field', ['fieldName' => 'airfareCurrency'])
 
         <label>Hotel Total: *</label>
-        <input type='number' name='hotel' value='{{ $hotel }}'>
+        <input type='number' name='hotel' value='{{ old('hotel') }}'>
         @include('includes.error-field', ['fieldName' => 'hotel'])
 
         <label>Currency</label>
         <select name='hotelCurrency'>
-            <option value='usd' {{ ($hotelCurrency == 'usd') ? 'selected' : ''}}>USD</option>
-            <option value='gbp' {{ ($hotelCurrency == 'gbp') ? 'selected' : ''}} >GBP</option>
-            <option value='eur' {{ ($hotelCurrency == 'eur') ? 'selected' : ''}}>EUR</option>
+            <option value='usd' {{ (old('hotelCurrency') == 'usd') ? 'selected' : ''}}>USD</option>
+            <option value='gbp' {{ (old('hotelCurrency') == 'gbp') ? 'selected' : ''}} >GBP</option>
+            <option value='eur' {{ (old('hotelCurrency') == 'eur') ? 'selected' : ''}}>EUR</option>
         </select>
         @include('includes.error-field', ['fieldName' => 'hotelCurrency'])
 
@@ -50,16 +50,16 @@
         <ul class='radios'>
             <li><label><input type='radio'
                               name='months'
-                              value='three' {{ ($months == 'three') ? 'checked' : ''}}>Three Months</label>
+                              value='three' {{ (old('months') == 'three') ? 'checked' : ''}}>Three Months</label>
             <li><label><input type='radio'
                               name='months'
-                              value='six' {{ ($months == 'six') ? 'checked' : ''}}>Six Months</label>
+                              value='six' {{ (old('months') == 'six') ? 'checked' : ''}}>Six Months</label>
             <li><label><input type='radio'
                               name='months'
-                              value='twelve' {{ ($months == 'twelve') ? 'checked' : ''}}>One Year</label>
+                              value='twelve' {{ (old('months') == 'twelve') ? 'checked' : ''}}>One Year</label>
             <li><label><input type='radio'
                               name='months'
-                              value='twentyfour' {{ ($months == 'twentyfour') ? 'checked' : ''}}>Two Years</label>
+                              value='twentyfour' {{ (old('months') == 'twentyfour') ? 'checked' : ''}}>Two Years</label>
         </ul>
         @include('includes.error-field', ['fieldName' => 'months'])
 
