@@ -11,6 +11,11 @@ body {
     padding-left: 20px;
 }
 
+.required {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
 
 input[type=text] {
     display: block;
@@ -72,3 +77,4 @@ div.alert-primary {
     border-radius: 25px;
     padding: 20px;
 }
+
