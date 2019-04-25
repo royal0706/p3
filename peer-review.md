@@ -1,14 +1,14 @@
 ## P3 Peer Review
 
 + Reviewer's name: Victoria Royal
-+ Reviwee's name: Christopher Sheppard
++ Reviewee's name: Christopher Sheppard
 + URL to Reviewee's P3 Github Repo URL: <https://github.com/chs9433/project-3>
 
 ## 1. Interface
 
 My initial impression was that the site interface was overall very professional, with a clean and streamlined design.
  
-I especially liked how to the results displayed in a table with the map display, which was very practical. Also, I liked the placement of the input fields, which allows of the fields to viewed without having to scroll down, and the clear labeling for each field. I also liked the small finishing details such as the AutoPilot icon and search icon.
+I especially liked how the results displayed in a table with the map display, which I thought was very practical. Also, I liked the placement of the input fields, which allowed all of the fields to viewed without having to scroll down, and the clear labeling for each field. I also liked the small finishing details such as the AutoPilot icon and search icon.
 
 I also appreciated the default values in each field, although I did find it slightly confusing that there seemed to be no difference in font color between the default values and the entered values.  
 
